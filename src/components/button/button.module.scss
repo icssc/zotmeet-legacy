@@ -1,0 +1,79 @@
+@use "../../styles/typography" as typography;
+
+.button {
+  all: unset;
+  display: grid;
+  place-content: center;
+  border-radius: 8px;
+
+  @include typography.body;
+  line-height: 100%;
+
+  &.small {
+    padding: 8px 16px;
+  }
+
+  &.large {
+    padding: 16px 32px;
+  }
+
+  &.sand {
+    color: var(--sand12);
+    background: var(--sand2);
+    border: 1px solid var(--sand7);
+    &:hover {
+      border-color: var(--sand8);
+    }
+    &:active {
+      background: var(--sand3);
+    }
+  }
+
+  &.red {
+    color: var(--red12);
+    background: var(--red2);
+    border: 1px solid var(--red7);
+    &:hover {
+      border-color: var(--red8);
+    }
+    &:active {
+      background: var(--red3);
+    }
+  }
+
+  &.green {
+    color: var(--green12);
+    background: var(--green2);
+    border: 1px solid var(--green7);
+    &:hover {
+      border-color: var(--green7);
+    }
+    &:active {
+      background: var(--green3);
+    }
+  }
+
+  &.yellow {
+    color: var(--yellow12);
+    background: var(--yellow2);
+    border: 1px solid var(--yellow7);
+    &:hover {
+      border-color: var(--yellow8);
+    }
+    &:active {
+      background: var(--yellow3);
+    }
+  }
+
+  &.blue {
+    color: var(--blue12);
+    background: var(--blue2);
+    border: 1px solid var(--blue7);
+    &:hover {
+      border-color: var(--blue8);
+    }
+    &:active {
+      background: var(--blue3);
+    }
+  }
+}

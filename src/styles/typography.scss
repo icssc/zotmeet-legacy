@@ -1,0 +1,36 @@
+@mixin defaults {
+  font-family: "Inter", sans-serif;
+  color: var(--sand12);
+}
+
+@mixin body-s {
+  @include defaults;
+  font-size: 14px;
+  letter-spacing: -0.006em;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+@mixin body {
+  @include defaults;
+  font-size: 16px;
+  letter-spacing: -0.011em;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@mixin body-l {
+  @include defaults;
+  font-size: 18px;
+  letter-spacing: -0.014em;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+@mixin heading {
+  @include defaults;
+  font-size: 24px;
+  letter-spacing: -0.019em;
+  line-height: 34px;
+  font-weight: 500;
+}

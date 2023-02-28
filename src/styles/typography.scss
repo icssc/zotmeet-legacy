@@ -1,36 +1,66 @@
 @mixin defaults {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
   color: var(--sand12);
 }
 
-@mixin body-s {
+@mixin heading-large {
   @include defaults;
-  font-size: 14px;
-  letter-spacing: -0.006em;
-  line-height: 21px;
-  font-weight: 400;
-}
+  font-weight: 500;
 
-@mixin body {
-  @include defaults;
-  font-size: 16px;
-  letter-spacing: -0.011em;
-  line-height: 24px;
-  font-weight: 400;
-}
+  font-size: 24px;
+  letter-spacing: -0.019em;
+  line-height: 31px;
 
-@mixin body-l {
-  @include defaults;
-  font-size: 18px;
-  letter-spacing: -0.014em;
-  line-height: 27px;
-  font-weight: 400;
+  @media (min-width: 800px) {
+    font-size: 40px;
+    letter-spacing: -0.022em;
+    line-height: 52px;
+  }
 }
 
 @mixin heading {
   @include defaults;
-  font-size: 24px;
-  letter-spacing: -0.019em;
-  line-height: 34px;
   font-weight: 500;
+
+  font-size: 20px;
+  letter-spacing: -0.017em;
+  line-height: 26px;
+
+  @media (min-width: 800px) {
+    font-size: 24px;
+    letter-spacing: -0.019em;
+    line-height: 31px;
+  }
+}
+
+@mixin body-large {
+  @include defaults;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.014em;
+  line-height: 25px;
+}
+
+@mixin body {
+  @include defaults;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.011em;
+  line-height: 22px;
+}
+
+@mixin label {
+  @include defaults;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.011em;
+  line-height: 16px;
+}
+
+@mixin label-bold {
+  @include defaults;
+  font-weight: 450;
+  font-size: 16px;
+  letter-spacing: -0.011em;
+  line-height: 16px;
 }

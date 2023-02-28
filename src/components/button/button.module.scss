@@ -6,7 +6,7 @@
   place-content: center;
   border-radius: 8px;
 
-  @include typography.body;
+  @include typography.label;
   line-height: 100%;
 
   &.small {

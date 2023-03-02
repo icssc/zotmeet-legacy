@@ -16,7 +16,7 @@ export async function GET(request: Request) {
       ? "http://localhost:3000/auth/callback"
       : "https://staging.zotmeet.com/auth/callback";
 
-  const authorizationUrl = workos.sso.getAuthorizationURL({
+  const authorizationUrl = workos.sso.getAuthorizationURL({ 
     provider,
     redirectURI,
     clientID,

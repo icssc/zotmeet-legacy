@@ -11,7 +11,10 @@ export async function GET(request: Request) {
 
   const provider = "GoogleOAuth";
 
-  const redirectURI = "http://localhost:3000/auth/callback";
+  const redirectURI =
+    process.env.NODE_ENV == "development"
+      ? "http://localhost:3000/auth/callback"
+      : "https://staging.zotmeet.com/auth/callback";
 
   const authorizationUrl = workos.sso.getAuthorizationURL({
     provider,

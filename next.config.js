@@ -3,6 +3,15 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/sign-in",
+        destination: "/auth/google",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

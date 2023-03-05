@@ -8,7 +8,7 @@ const nextConfig = {
       {
         source: "/sign-in",
         destination: "/auth/google",
-        permanent: true,
+        permanent: false,
       },
     ];
   },

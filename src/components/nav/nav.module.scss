@@ -1,0 +1,67 @@
+@use "../../styles/typography" as typography;
+
+.nav {
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  @include typography.label;
+  align-items: center;
+  line-height: 100%;
+  background-color: var(--sand1);
+  border-bottom: 1px solid var(--sand6);
+  gap: 10px;
+
+  &.small {
+    padding: 16px;
+  }
+
+  &.large {
+    padding: 40px;
+  }
+
+  .title {
+    color: var(--sand12);
+    font-weight: 450;
+    font-variation-settings: 'sInt' 0;
+  }
+
+  .regular {
+    color: var(--sand11);
+    font-weight: 400;
+    letter-spacing: -0.176px;
+  }
+
+  .link {
+    &:active, &:visited, &:hover, &:link {
+      text-decoration: none;
+    }
+  }
+
+
+  .left-side {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    button {
+      padding: 8px;
+    }
+  }
+
+}
+

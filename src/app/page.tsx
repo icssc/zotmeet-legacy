@@ -1,9 +1,9 @@
-import Nav from '@/src/components/nav';
+import Nav from "@/src/components/nav";
 
 export default function Home() {
   return (
     <main>
-        <Nav size="small"/>
+      <Nav size="small" />
     </main>
   );
 }

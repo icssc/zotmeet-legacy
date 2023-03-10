@@ -1,9 +1,9 @@
-import Button from "../components/button";
+import Nav from "@/src/components/nav";
 
 export default function Home() {
   return (
     <main>
-      <Button color="yellow" size="large" label="test" />
+      <Nav size="small" />
     </main>
   );
 }

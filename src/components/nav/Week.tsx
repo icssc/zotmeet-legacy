@@ -6,11 +6,7 @@ const Week = async () => {
 
   let { week } = await (await fetch(currentWeekAPILink)).json();
 
-  return (
-    <>
-      <p className={styles["regular"]}>Week {week}</p>
-    </>
-  );
+  return <p className={styles["regular"]}>Week {week}</p>;
 };
 
 export default Week;

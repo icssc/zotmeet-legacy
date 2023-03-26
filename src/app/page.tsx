@@ -20,7 +20,7 @@ export default function Home() {
       <Root>
         <Trigger color="blue"/>
         <Portal>
-          <Content position="popper">
+          <Content position="popper" align="end">
             <ScrollUpButton />
             <Viewport>
               <SelectItem value="apple">Apple</SelectItem>

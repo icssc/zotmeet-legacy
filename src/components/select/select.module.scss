@@ -1,8 +1,3 @@
-/* reset */
-.button {
-    all: unset;
-}
-
 .select-trigger {
     /* Color Theme=Light, Color=Sand, State=Default */
     box-sizing: border-box;
@@ -47,15 +42,18 @@
 
 
 .select-content {
-    overflow: hidden;
+    max-height: var(--radix-select-content-available-height);
+    // max-height: 300px;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: var(--sand2);
 }
 
+
 .select-viewport {
     padding: 5px;
 }
+
 
 .select-item {    
     /* Auto layout */
@@ -82,6 +80,7 @@
         background-color: var(--sand4);
     }
 }
+
 
 .select-scroll-button {
     display: flex;

@@ -1,0 +1,65 @@
+@use "~@/src/styles/typography" as typography;
+@use "~@/src/styles/colors" as colors;
+
+.nav {
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  @include typography.label;
+  align-items: center;
+  line-height: 100%;
+  background-color: colors.$sand1;
+  border-bottom: 1px solid colors.$sand6;
+  gap: 10px;
+
+  &.small {
+    padding: 16px;
+  }
+
+  &.large {
+    padding: 40px;
+  }
+
+  .title {
+    color: colors.$sand12;
+    font-weight: 450;
+  }
+
+  .regular {
+    color: colors.$sand11;
+    font-weight: 400;
+  }
+
+  .link {
+    &:active,
+    &:visited,
+    &:hover,
+    &:link {
+      text-decoration: none;
+    }
+  }
+
+  .left-side {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    button {
+      padding: 8px;
+    }
+  }
+}

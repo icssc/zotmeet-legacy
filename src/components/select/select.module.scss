@@ -1,8 +1,6 @@
 .select-trigger {
-    /* Color Theme=Light, Color=Sand, State=Default */
     box-sizing: border-box;
 
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,20 +38,20 @@
     }
 }
 
-
 .select-content {
     max-height: var(--radix-select-content-available-height);
-    // max-height: 300px;
-    box-sizing: border-box;
-    border-radius: 10px;
     background-color: var(--sand2);
+    border: 1px solid var(--sand7);
+    border-radius: 12px;
 }
-
 
 .select-viewport {
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 2px;
 }
-
 
 .select-item {    
     /* Auto layout */
@@ -61,11 +59,14 @@
     flex-direction: row;
     align-items: center;
     padding: 8px 10px;
-    user-select: none;
     gap: 8px;
 
     background: var(--sand2);
     border-radius: 10px;
+
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
 
     &[data-state="unchecked"] {
         padding-left: 34px;
@@ -80,7 +81,6 @@
         background-color: var(--sand4);
     }
 }
-
 
 .select-scroll-button {
     display: flex;

@@ -1,0 +1,80 @@
+@use "~@/src/styles/colors" as colors;
+
+/* reset */
+#input {
+  all: unset;
+  
+}
+
+.LabelRoot {
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 8;
+
+  &.sand{
+    color: colors.$sand11;
+  }
+  &.red{
+    color: colors.$red11;
+  }
+}
+
+.Input {
+  object-fit: fill;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 8px;
+  font-size: 16px;
+  border-style: solid;
+  width: 200px;
+  // height: 43px;
+  margin-left: 0;
+  border-radius: 12px;
+
+  &.sand{
+    background-color: colors.$sand1;
+    color: colors.$sand11;
+    border-color: colors.$sand7;
+  }
+  &.red{
+    background-color: colors.$red1;
+    color: colors.$red11;
+    border-color: colors.$red7;
+  }
+  
+  &:focus {
+    &.sand{
+      outline-color: colors.$sand7;
+    }
+    &.red{
+      outline-color: colors.$red1;
+    }
+
+  }
+  .input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: none !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    padding: 0px 0px;
+    textarea:focus, input:focus{
+      outline: none;
+    }
+    &.sand{
+      background-color: colors.$sand1;
+      color: colors.$sand11;
+      border-color: colors.$sand7;
+    }
+    &.red{
+      background-color: colors.$red1;
+      color: colors.$red11;
+      border-color: colors.$red7;
+    }
+  }
+}
